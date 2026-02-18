@@ -1,0 +1,106 @@
+#
+#	config.nlt for standard pc & ews
+#
+
+#
+#	definition of blocks
+#
+
+o1 =	eye, ¡
+i2 =	epu,  
+i3 =	ebl,  
+l3 =	ere,  
+i4 =	egr,  
+j4 =	ere, ¡
+j4r =	ebl, ¡
+t4 =	epu, ¡
+o4 =	eye,  
+z4 =	ewh, ¡
+z4r =	etu,  
+i5 =	evtu, ™
+x5 =	evbl, ™
+t5 =	evre, ™
+u5 =	evgr, ™
+w5 =	evwh, ™
+l5 =	evpu, ™
+z5 =	evye, ™
+z5r =	evtu, š
+j5 =	evgr, š
+j5r =	evwh, š
+n5 =	evre, š
+n5r =	evbl, š
+y5 =	evye, š
+y5r =	evpu, š
+f5 =	evgr,  
+f5r =	evtu,  
+p5 =	evwh,  
+p5r =	evpu,  
+
+#
+#	definition of worm
+#
+
+wal =	ewh
+whd =	evpu, %
+wbd =		, *
+wsp =	etu, +
+
+
+#
+#	alias
+#
+
+#	default setting
+
+alias	^H	left
+alias	4	left
+alias	H	left
+alias	h	left
+alias	^L	right
+alias	6	right
+alias	L	right
+alias	l	right
+alias	\x20	drop
+alias	^J	drop
+alias	2	drop
+alias	J	drop
+alias	j	drop
+alias	^I	rotate
+alias	^M	rotate
+alias	5	rotate
+alias	^K	pray
+alias	8	pray
+alias	K	pray
+alias	P	pray
+alias	k	pray
+alias	p	pray
+alias	^C	quit
+alias	Q	quit
+alias	q	quit
+alias	^[	panic
+alias	0	panic
+alias	!	invo
+alias	^R	redraw
+alias	^G	beep
+alias	^F	colour
+alias	^E	jump
+
+#	for workstation console
+
+alias	^I	panic
+alias	^[	null
+#alias	[	null
+alias	A	pray
+alias	B	drop
+alias	C	right
+alias	D	left
+
+
+#
+#	standard settings
+#
+
+beep	yes
+colour	yes
+ansi	yes
+jump	no

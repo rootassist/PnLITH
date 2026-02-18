@@ -1,0 +1,96 @@
+#
+#	config.nlt for monocrome (or bad contrast) display users.
+#
+
+#
+#	definition of blocks
+#
+
+o1 =	ewh, Å°
+i2 =	ewh, Å°
+i3 =	ewh, Å°
+l3 =	ewh, Å°
+i4 =	ewh, Å°
+j4 =	ewh, Å°
+j4r =	ewh, Å°
+t4 =	ewh, Å°
+o4 =	ewh, Å°
+z4 =	ewh, Å°
+z4r =	ewh, Å°
+i5 =	ewh, Å°
+x5 =	ewh, Å°
+t5 =	ewh, Å°
+u5 =	ewh, Å°
+w5 =	ewh, Å°
+l5 =	ewh, Å°
+z5 =	ewh, Å°
+z5r =	ewh, Å°
+j5 =	ewh, Å°
+j5r =	ewh, Å°
+n5 =	ewh, Å°
+n5r =	ewh, Å°
+y5 =	ewh, Å°
+y5r =	ewh, Å°
+f5 =	ewh, Å°
+f5r =	ewh, Å°
+p5 =	ewh, Å°
+p5r =	ewh, Å°
+
+#
+#	definition of worm
+#
+
+wal =	ewh
+whd =	evwh, %
+wbd =		, *
+wsp =	ewh, +
+
+
+#
+#	alias
+#
+
+#	default setting
+
+#alias	^H	left
+#alias	4	left
+#alias	H	left
+#alias	h	left
+#alias	^L	right
+#alias	6	right
+#alias	L	right
+#alias	l	right
+#alias	\x20	drop
+#alias	^J	drop
+#alias	2	drop
+#alias	J	drop
+#alias	j	drop
+#alias	^I	rotate
+#alias	^M	rotate
+#alias	5	rotate
+#alias	^K	pray
+#alias	8	pray
+#alias	K	pray
+#alias	P	pray
+#alias	k	pray
+#alias	p	pray
+#alias	^C	quit
+#alias	Q	quit
+#alias	q	quit
+#alias	^[	panic
+#alias	0	panic
+#alias	!	invo
+#alias	^R	redraw
+#alias	^G	beep
+#alias	^F	colour
+#alias	^E	jump
+
+
+#
+#	standard settings
+#
+
+#beep	yes
+#colour	yes
+#ansi	yes
+#jump	no

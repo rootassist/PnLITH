@@ -1,0 +1,67 @@
+#
+#	ç’k‚Ìİ’è‚Å‚ ‚éB
+#
+
+#
+#	definition of blocks
+#
+
+o1 =	eye, Î
+i2 =	epu, ’Z
+i3 =	ebl, ’¼
+l3 =	ere, Šp
+i4 =	egr, ‘P
+j4 =	ere, Šb
+j4r =	ebl, ’İ
+t4 =	epu, ‹~
+o4 =	eye, ‹é
+z4 =	ewh, ŸT
+z4r =	etu, ˜f
+i5 =	etu, ’·
+x5 =	ebl, Œğ
+t5 =	ere, }
+u5 =	egr, ’Ù
+w5 =	ewh, ”ü
+l5 =	epu, €
+z5 =	eye, –Å
+z5r =	etu, ¢
+j5 =	egr, ˆ«
+j5r =	ewh, ×
+n5 =	ere, ‹¶
+n5r =	ebl, Œ™
+y5 =	eye, É
+y5r =	epu, ˆá
+f5 =	egr, —
+f5r =	etu, G
+p5 =	ewh, “İ
+p5r =	epu, d
+
+#
+#	definition of worm
+#
+
+wal =	ewh
+whd =	evpu, ?
+wbd =		, .
+wsp =	etu, !
+
+
+#
+#	aliases
+#
+
+#	(emacs like assignment)
+
+alias	^B	left
+alias	^F	right
+alias	^N	drop
+alias	^P	pray
+alias	^X	rotate
+#
+#	standard settings
+#
+
+#beep	yes
+#colour	yes
+#ansi	yes
+#jump	no
