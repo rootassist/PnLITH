@@ -106,6 +106,7 @@ PowerShellを起動して該当フォルダに移動済みの場合は
 と指定できます
 
 **実行がブロックされる場合**
+
 PowerShellのセキュリティ設定（実行ポリシー）によって起動がブロックされる場合は、以下のように -ExecutionPolicy Bypass を追加して実行を許可してください。
 
 ```powershell
@@ -120,6 +121,7 @@ Set-ExecutionPolicy Bypass -Scope Process
 ```
 
 **Windows Terminalで画面表示が崩れる場合（重要）**
+
 Windows Terminalで実行すると、ブロックの反転表示が半分欠けるなど、正常に描画されない場合があります。
 これを回避し、従来のコンソール画面で正しく表示させるには、先頭に conhost を付けて以下のように指定してください。
 
