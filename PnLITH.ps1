@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     PnLITH - PowerShell版ブロック積みゲーム
 .DESCRIPTION
