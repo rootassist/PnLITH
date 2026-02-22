@@ -88,11 +88,54 @@
 
 ---
 
-## 起動オプション
+## 起動方法
 
+コマンドプロンプトまたはPowerShellを開き、以下のコマンドを入力して実行します。
+
+```powershell
+powershell -File (パス名)\pnlith.ps1 [オプション]
 ```
-.\pnlith.ps1 [オプション]
+
+パス名には、使用ファイル一式を置いた絶対パスを指定してください。  
+PowerShellを起動して該当フォルダに移動済みの場合は
+
+```powershell
+.\pnlith.ps1 
 ```
+
+と指定できます
+
+**実行がブロックされる場合**
+PowerShellのセキュリティ設定（実行ポリシー）によって起動がブロックされる場合は、以下のように -ExecutionPolicy Bypass を追加して実行を許可してください。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File (パス名)\pnlith.ps1 [オプション]
+```
+
+PowerShellを起動して該当フォルダに移動済みの場合は、Set-ExecutionPolicyで実行を許可してから起動してください。
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process
+.\pnlith.ps1 
+```
+
+**Windows Terminalで画面表示が崩れる場合（重要）**
+Windows Terminalで実行すると、ブロックの反転表示が半分欠けるなど、正常に描画されない場合があります。
+これを回避し、従来のコンソール画面で正しく表示させるには、先頭に conhost を付けて以下のように指定してください。
+
+```powershell
+conhost powershell -File (パス名)\pnlith.ps1 [オプション]
+```
+
+※実行ポリシーのブロックも同時に回避する場合は
+
+```powershell
+conhost powershell -ExecutionPolicy Bypass -File (パス名)\pnlith.ps1 [オプション] 
+```
+
+と入力してください
+
+## 起動オプション
 
 | オプション         | 型     | 既定値 |    範囲    | 説明                               |
 | :----------------- | :----- | :----: | :--------: | :--------------------------------- |
@@ -114,14 +157,23 @@
 | `-PMoon`         | switch |   —   |     —     | 月齢の概算値を表示                 |
 | `-NewMoon`       | string |   ""   |  ISO 8601  | 基準新月の日時（後述）             |
 
-### 起動例
+### 起動例（使用ファイル一式をC:\WORKに置いた場合）
 
 ```powershell
-.\pnlith.ps1                                   # 既定設定で開始
-.\pnlith.ps1 -Training                         # トレーニングモード
-.\pnlith.ps1 -Width 12 -Depth 18 -Speed 300    # フィールドと速度を指定
-.\pnlith.ps1 -ShowScores                        # ハイスコア表示
-.\pnlith.ps1 -Player "TARO" -Height 5           # プレイヤー名と初期ゴミ高さを指定
+# 既定設定で開始
+PowerShell -File C:\WORK\pnlith.ps1                          
+# トレーニングモード
+PowerShell -File C:\WORK\pnlith.ps1 -Training                
+# フィールドと速度を指定
+PowerShell -File C:\WORK\pnlith.ps1 -Width 12 -Depth 18 -Speed 300 
+# ハイスコア表示
+PowerShell -File C:\WORK\pnlith.ps1 -ShowScores              
+# プレイヤー名と初期ゴミ高さを指定
+PowerShell -File C:\WORK\pnlith.ps1 -Player "TARO" -Height 5   
+# Windows11のWindows Terminalで実行する場合
+conhost PowerShell -File C:\WORK\pnlith.ps1                  
+# Windows11のWindows Terminalで実行し、スクリプトの実行を許可する場合
+conhost PowerShell -ExecutionPolicy Unrestricted -File C:\WORK\pnlith.ps1                              
 ```
 
 ### プレイヤー名のデフォルト
